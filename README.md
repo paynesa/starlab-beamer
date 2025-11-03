@@ -1,8 +1,12 @@
 # <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/> <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/> <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/> A StarLab Beamer Theme <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/> <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/><img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/>
 ----
-This repository contains the `.sty` file for the StarLab beamer theme, as well as an example set of beamer slides using this `.sty` file. 
+This repository contains the `.sty` file for the StarLab beamer theme, as well as an example set of beamer slides using this `.sty` file, which yields beamer slides with the following appearance: 
 
-<img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/title.png?raw=true" alt="I <3 StarLab" width="500"/>
+### Title: 
+<img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/title.png?raw=true" alt="I <3 StarLab" width="700"/>
+
+### Body: 
+<img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/slide.png?raw=true" alt="I <3 StarLab" width="700"/>
 
 The relevant files are as follows:
 - `starlabtheme.sty` defines the style of the StarLab beamer slides. 
