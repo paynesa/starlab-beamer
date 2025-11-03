@@ -1,0 +1,54 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{starlabtheme}
+
+%------------------------------------------------------------
+% Title configuration
+%------------------------------------------------------------
+\title[Footer Title]{\textbf{Title Placeholder}}
+
+\author[Footer Author]{
+    \vspace{0.5em}\\
+    \large \boldgreen{Author Placeholder}\\
+    \footnotesize \texttt{email@email.com}\\
+    \href{website}{\texttt{website}}
+}
+
+\institute[institute]{
+    \includegraphics[height=0.8cm]{figs/sbu.png}
+    \includegraphics[height=0.8cm]{figs/favicon.png}
+    \includegraphics[height=0.8cm]{figs/nsf.png}
+    \includegraphics[height=0.8cm]{figs/iacs.png}
+}
+
+\date[Footer Date / Conference]{
+    \boldpurple{Conference}\\
+    \small date
+}
+
+%------------------------------------------------------------
+\begin{document}
+
+\frame{\titlepage}
+
+% Example frame
+\begin{frame}{Example Slide}
+This is an example slide using the \texttt{starlabtheme.sty} file.
+\end{frame}
+
+% Example citation
+\begin{frame}{Example Citation}
+\citet{yang2016price}
+\end{frame}
+
+% Example references
+\begin{frame}[allowframebreaks]{References}
+\footnotesize
+    \bibliography{custom}
+    \bibliographystyle{acl_natbib}
+    \vskip0pt plus 1filll
+\hfill{}\footnotesize
+\end{frame}
+
+
+\end{document}
+

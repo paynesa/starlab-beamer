@@ -1,0 +1,93 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{starlabtheme}[2025/11/03 Custom Beamer Theme - StarLab]
+
+%------------------------------------------------------------
+% Packages
+%------------------------------------------------------------
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{latexsym}
+\RequirePackage{mathrsfs}
+\RequirePackage{algpseudocode}
+\RequirePackage{algorithm}
+\RequirePackage{xcolor}
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
+\RequirePackage{mathtools}
+\RequirePackage{tikz}
+\RequirePackage{tipa}
+\RequirePackage{bbding}
+\RequirePackage{natbib}
+\RequirePackage{adjustbox}
+\RequirePackage{hyperref}
+
+\usetikzlibrary{automata,positioning,decorations.text,topaths,arrows.meta,decorations.pathmorphing,quotes}
+
+%------------------------------------------------------------
+% Colors
+%------------------------------------------------------------
+\definecolor{figpurple}{RGB}{140, 95, 211}
+\definecolor{figgreen}{RGB}{52, 170, 136}
+\definecolor{figyellow}{RGB}{250, 212, 42}
+
+%------------------------------------------------------------
+% Theme setup
+%------------------------------------------------------------
+\usetheme{Madrid}
+\useoutertheme{infolines} 
+\useinnertheme{circles}
+
+\setbeamercolor{palette primary}{bg=figpurple,fg=white}
+\setbeamercolor{palette secondary}{bg=figgreen,fg=white}
+\setbeamercolor{palette tertiary}{bg=figyellow,fg=white}
+\setbeamercolor{palette quaternary}{bg=figgreen,fg=white}
+\setbeamercolor{structure}{fg=figgreen}
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor*{block title example}{fg=white,bg=figgreen}
+\setbeamercolor*{block body example}{fg=black,bg=figgreen!10}
+\setbeamercolor*{block title}{fg=white,bg=figpurple}
+\setbeamercolor*{block body}{fg=black,bg=figpurple!10}
+\setbeamercolor*{itemize item}{fg=figpurple}
+\setbeamercolor*{itemize subitem}{fg=figgreen}
+\setbeamercolor{subsection in head/foot}{bg=figpurple,fg=white}
+
+%------------------------------------------------------------
+% Commands
+%------------------------------------------------------------
+\beamertemplatenavigationsymbolsempty
+\newcommand{\boldpurple}[1]{\textbf{\textcolor{figpurple}{#1}}}
+\newcommand{\boldgreen}[1]{\textbf{\textcolor{figgreen}{#1}}}
+\newcommand{\boldyellow}[1]{\textbf{\textcolor{figyellow}{#1}}}
+\newcommand{\boldpink}[1]{\textbf{\textcolor{magenta}{#1}}}
+\newcommand{\sigstar}{\Sigma^*}
+
+%------------------------------------------------------------
+% Custom footline
+%------------------------------------------------------------
+\makeatletter
+\defbeamertemplate*{footline}{Starlab theme}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortdate{}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortauthor\expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~~(\insertshortinstitute)}\hspace*{2em}
+    \insertframenumber{} \hspace*{3ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
+
+%------------------------------------------------------------
+% TOC at section start
+%------------------------------------------------------------
+\AtBeginSection[]{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
