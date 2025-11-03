@@ -1,4 +1,4 @@
-# A StarLab Beamer Theme ![StarLab Logo](https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true "I <3 StarLab")
+# <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/> A StarLab Beamer Theme <img src="https://github.com/paynesa/starlab-beamer/blob/main/figs/favicon.png?raw=true" alt="I <3 StarLab" width="50"/>
 ----
 This repository contains the `.sty` file for the StarLab beamer theme, as well as an example set of beamer slides using this `.sty` file. 
 The relevant files are as follows:
